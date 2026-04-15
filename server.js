@@ -20,7 +20,7 @@ const app = express();
 const httpServer = http.createServer(app);
 const io = new Server(httpServer, {
     cors: {
-        origin: ['http://localhost:5173', 'http://localhost:5174', 'https://matrimony-madurai.web.app', 'https://matrimony-madurai.firebaseapp.com'],
+        origin: ['http://localhost:5173', 'http://localhost:5174', 'https://matrimony-madurai.web.app', 'https://matrimony-madurai.firebaseapp.com','https://matrimony-fd584.web.app'],
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
     }
 });
@@ -107,7 +107,9 @@ app.use(cors({
         'http://localhost:3000',
         'http://localhost:5174', 
         'https://matrimony-madurai.web.app', 
-        'https://matrimony-madurai.firebaseapp.com'
+        'https://matrimony-madurai.firebaseapp.com',
+        'https://matrimony-fd584.web.app'
+        
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     credentials: true,
